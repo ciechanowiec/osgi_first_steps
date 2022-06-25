@@ -11,6 +11,18 @@ import java.io.InputStreamReader;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * This class implements a bundle that uses a dictionary
+ * service to check for the proper spelling of a word by
+ * check for its existence in the dictionary. This bundle
+ * uses the first service that it finds and does not monitor
+ * the dynamic availability of the service (i.e., it does not
+ * listen for the arrival or departure of dictionary services).
+ * When starting this bundle, the thread calling the start()
+ * method is used to read words from standard input. You can
+ * stop checking words by entering an empty line, but to start
+ * checking words again you must stop and then restart the bundle.
+ **/
 public class Activator implements BundleActivator {
 
     private static final Logger LOGGER = Logger.getLogger(Activator.class.getName());
