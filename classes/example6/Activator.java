@@ -4,7 +4,6 @@ import org.osgi.framework.*;
 import tutorial.example2.service.DictionaryService;
 import tutorial.example6.service.SpellChecker;
 
-import java.lang.reflect.Array;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -88,7 +87,7 @@ public class Activator implements BundleActivator, ServiceListener {
     @Override
     public void serviceChanged(ServiceEvent event) {
         synchronized (referencesList) {
-            // Add the new dictionary service to the service lsit
+            // Add the new dictionary service to the service list
             if (event.getType() == ServiceEvent.REGISTERED) {
                 // Get the service object
                 Object service = context.getService(event.getServiceReference());
@@ -180,7 +179,7 @@ public class Activator implements BundleActivator, ServiceListener {
             }
 
             // Return the array of incorrect words
-            return (String[]) errorList.toArray(new String[errorList.size()]);
+            return errorList.toArray(new String[errorList.size()]);
         }
     }
 }
