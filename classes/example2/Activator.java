@@ -5,8 +5,6 @@ import org.osgi.framework.BundleContext;
 import tutorial.example2.service.DictionaryService;
 
 import java.util.Dictionary;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Hashtable;
 
 /**

@@ -8,9 +8,9 @@ public interface DictionaryService {
 
     /**
      * Check for the existence of a word.
-     * @param word the word to be checked
+     * @param checkedWord the word to be checked
      * @return true if the word is in the dictionary,
      *         false otherwise
      */
-    boolean checkWord(String word);
+    boolean checkWord(String checkedWord);
 }

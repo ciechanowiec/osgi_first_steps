@@ -17,7 +17,7 @@ The commands given below must be run from the root level of the project.
 == Example 1
 To compile:
 
-    javac -cp "felix.jar" -d ./classes/example1 ./classes/example1/*.java
+    javac -cp felix.jar -d ./classes/example1 ./classes/example1/*.java
 
 To pack into jar:
 
@@ -33,3 +33,11 @@ Inside the Apache Felix console start the bundle:
 
 == Example 2
 As for Example 1, but change the number of the example
+
+== Example 2b
+As for Example 1, but:
+
+* change the number of the example
+* to compile use:
+
+    javac -cp felix.jar:jars/example2.jar -d ./classes/example2b ./classes/example2b/*.java
