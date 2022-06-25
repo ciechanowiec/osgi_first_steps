@@ -1,0 +1,35 @@
+= tutorial
+:reproducible:
+:doctype: article
+:author: Herman Ciechanowiec
+:email: herman@ciechanowiec.eu
+:chapter-signifier:
+//:sectnums:
+:sectnumlevels: 5
+:sectanchors:
+:toc: left
+:toclevels: 5
+:icons: font
+
+== On Running Commands
+The commands given below must be run from the root level of the project.
+
+== Example 1
+To compile:
+
+    javac -cp "felix.jar" -d ./classes/example1 ./classes/example1/*.java
+
+To pack into jar:
+
+    jar cfm jars/example1.jar manifests/example1/manifest.mf -C classes/example1/ tutorial/example1/
+
+Start the Apache Felix instance:
+
+    java -jar felix.jar
+
+Inside the Apache Felix console start the bundle:
+
+    start file:/home/herman_ciechanowiec/0_prog/tutorial/jars/example1.jar
+
+== Example 2
+As for Example 1, but change the number of the example
