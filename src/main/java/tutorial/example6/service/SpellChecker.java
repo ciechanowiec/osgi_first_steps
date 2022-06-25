@@ -18,5 +18,5 @@ public interface SpellChecker {
      * @return An array of misspelled words or null if no
      *         words are misspelled
      */
-    public String[] check(String passage);
+    public String[] checkPassage(String passage);
 }

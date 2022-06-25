@@ -139,7 +139,7 @@ public class Activator implements BundleActivator, ServiceListener {
          *         if no words are misspelled
          */
         @Override
-        public String[] check(String passage) {
+        public String[] checkPassage(String passage) {
             // No misspelled words for an empty string
             if (passage == null || passage.isEmpty()) {
                 return null;
