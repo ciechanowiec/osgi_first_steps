@@ -57,3 +57,11 @@ As for Example 1, but:
 * to compile use:
 
     javac -cp felix.jar:jars/example2.jar -d ./classes/example4 ./classes/example4/*.java
+
+== Example 5
+As for Example 1, but:
+
+* change the number of the example
+* to compile use:
+
+    javac -cp felix.jar:jars/example2.jar -d ./classes/example5 ./classes/example5/*.java
