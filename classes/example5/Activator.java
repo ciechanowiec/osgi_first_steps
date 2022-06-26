@@ -1,6 +1,8 @@
 package tutorial.example5;
 
-import org.osgi.framework.*;
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.Filter;
 import org.osgi.util.tracker.ServiceTracker;
 import tutorial.example2.service.DictionaryService;
 

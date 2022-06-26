@@ -7,6 +7,13 @@ import tutorial.example2.service.DictionaryService;
 import java.util.Dictionary;
 import java.util.Hashtable;
 
+/**
+ * This class implements a simple bundle that uses the bundle
+ * context to register a French language dictionary service
+ * with the OSGi framework. The dictionary service interface is
+ * defined in a separate class file and is implemented by an
+ * inner class.
+ */
 public class Activator implements BundleActivator {
 
     /**

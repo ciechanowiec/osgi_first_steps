@@ -9,7 +9,7 @@ import java.util.Hashtable;
 
 /**
  * This class implements a simple bundle that uses the bundle
- * context to register and English language dictionary service
+ * context to register an English language dictionary service
  * with the OSGi framework. The dictionary service interface is
  * defined in a separate class file and is implemented by an
  * inner class.

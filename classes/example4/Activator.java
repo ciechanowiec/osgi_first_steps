@@ -40,7 +40,7 @@ public class Activator implements BundleActivator, ServiceListener {
      * Adds itself as a listener for service events, then queries
      * for available dictionary services. If any dictionaries are
      * found it gets a reference to the first one available and
-     * then stats its "word checking loop". If no dictionaries are
+     * then starts its "word checking loop". If no dictionaries are
      * found, then it just goes directly into its "word checking loop",
      * but it will not be able to check any words until a dictionary
      * arrives; any arriving dictionary service will be automatically

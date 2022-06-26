@@ -19,10 +19,7 @@
     <maven.compiler.release>11</maven.compiler.release>
     <!--  dependencies  -->
     <osgi.core.version>8.0.0</osgi.core.version>
-    <lombok.version>1.18.24</lombok.version>
-    <testng.version>7.6.0</testng.version>
-    <tinylog-api.version>2.5.0-M1.1</tinylog-api.version>
-    <tinylog-impl.version>2.5.0-M1.1</tinylog-impl.version>
+    <org.osgi.service.component.annotations.version>1.5.0</org.osgi.service.component.annotations.version>
     <!-- plugins -->
     <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
     <maven-shade-plugin.version>3.3.0</maven-shade-plugin.version>
@@ -38,26 +35,10 @@
       <version>${osgi.core.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>${lombok.version}</version>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.service.component.annotations</artifactId>
+      <version>${org.osgi.service.component.annotations.version}</version>
       <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>${testng.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.tinylog</groupId>
-      <artifactId>tinylog-api</artifactId>
-      <version>${tinylog-api.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.tinylog</groupId>
-      <artifactId>tinylog-impl</artifactId>
-      <version>${tinylog-impl.version}</version>
     </dependency>
   </dependencies>
 
