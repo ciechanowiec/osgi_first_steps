@@ -11,7 +11,7 @@
 :icons: font
 
 == Overview
-The purpose of this repository is to illustrate main features and functionality offered by the OSGi framework and its Apache Felix implementation. The repository contains codebase developed according to the Apache Felix OSGi Tutorial published at https://felix.apache.org/documentation/tutorials-examples-and-presentations/apache-felix-osgi-tutorial.html.
+The purpose of this repository is to illustrate main features and functionality offered by the OSGi framework and its Apache Felix implementation. The repository contains codebase developed according to the Apache Felix OSGi tutorial published at https://felix.apache.org/documentation/tutorials-examples-and-presentations/apache-felix-osgi-tutorial.html.
 
 The repository contains eight examples which constitute a single simple dictionary application. The ordinal numeration of the examples spans from 1 to 7 and includes example #2 and example #2b. Each example represents a separate part (OSGi bundle) of the application.
 
@@ -40,7 +40,7 @@ image::img/screenshot.png[]
 
 == Compile and Build
 [upperalpha]
-. The commands pertaining to the compilation and building should be run from the root level of the project, in a sequential manner, starting from the first example.
+. The commands pertaining to the compilation and building should be run from the root level of the repository, in a sequential manner, starting from the first example.
 . The full content of the script which compiles and builds relevant examples is given below. The script with that content named `compile_and_build.sh` is located in the root directory of the repository:
 +
 [source, bash]
@@ -82,8 +82,8 @@ jar cfm jars/example7.jar manifests/example7/manifest.mf -C classes/example7/ tu
 
 == Deploy
 [upperalpha]
-. After compilation and building, the _.jar_ files (OSGi bundles) with the examples should be deployed to the Apache Felix instance.
-. The commands pertaining to the deployment should be run from the root level of the project, in a sequential manner, starting from the first example.
+. After compilation and building, the _.jar_ files (OSGi bundles) with the examples can be deployed to the Apache Felix instance.
+. The commands pertaining to the deployment should be run from the root level of the repository, in a sequential manner, starting from the first example.
 . It is assumed, that the full path to the repository is `/home/herman_ciechanowiec/0_prog/osgi_first_steps`. If that is not the case, the commands pertaining to the deployment should be changed respectively.
 
 === Start Apache Felix Instance
